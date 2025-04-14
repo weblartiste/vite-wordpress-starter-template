@@ -37,3 +37,5 @@ If you need :
     composer update
 
 Check src/functions/composer_demo.php for more informations about autoload!
+
+Thanks to [oguilleux](https://github.com/oguilleux/vite-wordpress-starter-theme) for inspiration!
