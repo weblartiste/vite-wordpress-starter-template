@@ -1,0 +1,47 @@
+@use '../global/variables' as v;
+@use '../global/mixins' as m;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  color: v.$textColor;
+  background-color: v.$mainColor;
+}
+
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 70px 1fr auto; // header, main, footer
+  grid-template-columns: 100%;
+  gap: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: v.$mainColor;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: v.$textColor;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: v.$textColor;
+}

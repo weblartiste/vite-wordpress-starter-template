@@ -1,0 +1,9 @@
+/* ignore build and node_modules folders */
+node_modules/
+dist/
+vendor/
+build/
+_DATA/
+*.lock
+pnpm-lock.yaml
+pnpm-workspace.yaml

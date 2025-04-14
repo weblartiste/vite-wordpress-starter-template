@@ -1,0 +1,64 @@
+/* Main column width */
+.wp-block {
+  max-width: 100%;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  max-width: 1080px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+
+/* Product Image Column */
+table.wp-list-table .column-image {
+  width: 52px;
+  text-align: center;
+  white-space: nowrap;
+}
+table.wp-list-table td.column-image img {
+  margin: 0;
+  width: auto;
+  height: auto;
+  max-width: 50px;
+  max-height: 50px;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 782px) {
+  table.wp-list-table .column-image {
+      display: none;
+      text-align: left;
+      padding-bottom: 0;
+  }
+  table.wp-list-table td.column-image::before {
+      display: none!important;
+  }
+}
+table.wp-list-table span.aw-column-icon::before {
+  font-family: Dashicons;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  text-indent: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  content: "\f128";
+}
+table.wp-list-table span.aw-column-icon {
+  display: block;
+  text-indent: -9999px;
+  position: relative;
+  height: 1em;
+  width: 1em;
+  margin: 0 auto;
+}

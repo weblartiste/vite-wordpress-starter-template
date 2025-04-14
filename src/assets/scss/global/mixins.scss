@@ -1,0 +1,41 @@
+@use './variables' as v;
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{v.$screen-sm-min}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{v.$screen-md-min}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{v.$screen-lg-min}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{v.$screen-xl-min}) {
+      @content;
+  }
+}
+
+// Custom devices
+@mixin rwdh($screen) {
+  @media (min-height: #{$screen}px) {
+      @content;
+  }
+}
+
+// @include rwd(1400) {
+//   margin-bottom: 20px;
+//   margin-top: 20px;
+// }

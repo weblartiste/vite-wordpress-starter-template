@@ -1,0 +1,7 @@
+{
+    "name": "weblartiste/vite-wp-starter-theme",
+    "type": "wordpress-theme",
+    "require": {
+        "mailjet/mailjet-apiv3-php": "^1.6.3"
+    }
+}

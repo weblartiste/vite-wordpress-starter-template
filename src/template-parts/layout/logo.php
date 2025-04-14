@@ -1,0 +1,1 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><path d="M160,160H40V40H160Z" transform="translate(-40 -40)" style="fill:red"/></svg>
